@@ -24,7 +24,7 @@ function getRecipesFromStorage() {
   // A9. TODO - Complete the functionality as described in this function
   //           header. It is possible in only a single line, but should
   //           be no more than a few lines.
-  const recipesString = window.localStorage.getItem('recipes');
+  const recipesString = localStorage.getItem('recipes');
   if (recipesString) {
     return JSON.parse(recipesString);
   } else {
