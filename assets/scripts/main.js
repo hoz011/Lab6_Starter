@@ -51,7 +51,7 @@ function addRecipesToDocument(recipes) {
     recipeCard.title = r.title;
     recipeCard.ingredients = r.ingredients;
     recipeCard.instructions = r.instructions;
-    main.appendChild(recipeCard);
+    mainEl.appendChild(recipeCard);
   });
 }
 
