@@ -123,12 +123,11 @@ class RecipeCard extends HTMLElement {
 
     // A6. TODO - Select the <article> we added to the Shadow DOM in the constructor
     let art = document.getElementByID('article');
-    art.attachShadow({mode: "open"});
     // A7. TODO - Set the contents of the <article> with the <article> template given in
     //           cardTemplate.html and the data passed in (You should only have one <article>,
     //           do not nest an <article> inside another <article>). You should use Template
     //           literals (template strings) and element.innerHTML for this.
-    art.shadowRoot.innerHTML = `
+    art.innerHTML = `
       <img src="${data.imgSrc}"
         alt="${data.imgAlt}">
       <p class="title">
